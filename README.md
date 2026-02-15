@@ -1,2 +1,3 @@
-# suricata-rules
-custom suricata rules
+# Suricata Rules
+
+Custom Suricata rules for DFIR & Threat Hunting
