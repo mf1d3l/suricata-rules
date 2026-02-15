@@ -1,0 +1,10 @@
+alert http any any -> any any (
+    msg:"HTTP bash reverse shell";
+    flow:established,to_client;
+    http.response_body;
+    content:"bash";
+    http.response_body;
+    content:"/dev/tcp/";
+    sid:3000001;
+    rev:1;
+)
